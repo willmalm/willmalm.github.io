@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>William O. Malmberg - Game Programmer Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*, *:before, *:after {box-sizing:border-box;
+}
+
+.slideshow-container {
+  max-width: 512px;
+  max-height: 300px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev
+{
+  left: 0;
+  opacity: 0.5;
+}
+
+.next {
+  right: 0;
+  opacity: 0.5;
+}
+
+.boxed
+{
+  background: #1d1f21;
+  text-align: center;
+  width: 90%;
+  min-width: 480px;
+  max-width: 1020px;
+  margin: auto;
+  border-style: solid;
+  border-width: 0px 0px 0 0px;
+  border-color: #242326;
+}
+
+.boxed-title
+{
+  position: relative;
+  padding: 10px;
+  text-align: left;
+  font-size: 20px;
+  color: white;
+  font-family: RobotoSlabThin;
+}
+
+.boxed-text
+{
+  word-wrap: break-word;
+  font-family: RobotoSlabThin;
+  width: 480px;
+  height: 200px;
+  color: white;
+  text-align: left;
+
+}
+
+.category-title
+{
+  font-family: RobotoSlabRegular;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  min-width: 480px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  opacity: 1;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.section
+{
+  display: inline-block; 
+  border: 5px solid rgba(0, 0, 0, 0);
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0);
+  border-width: 0px 0px 10px 10px;
+  vertical-align : top;
+  left: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #717171;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  position: absolute;
+  bottom: 10px;
+  opacity: 0.5;
+}
+
+.active, .dot:hover {
+  background-color: #bbb;
+  opacity: 1;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@font-face 
+{
+  font-family: RobotoSlabRegular;
+  src: url(Fonts/RobotoSlab-Regular.ttf);
+}
+
+@font-face 
+{
+  font-family: RobotoSlabThin;
+  src: url(Fonts/RobotoSlab-Thin.ttf);
+}
+
+@font-face 
+{
+  font-family: ProximaNovaRegular;
+  src: url(Fonts/ProximaNova-Regular.ttf);
+}
+
+body 
+{
+  font-family: RobotoSlabRegular;
+  background: #32353a;
+  margin: 0;
+}
+
+.header 
+{
+  padding-top: 5px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  text-align: left;
+  background: #1d1f21;
+  color: white;
+  font-size: 20px;
+  line-height: 0.7;
+}
+
+.header-title
+{
+  font-family: ProximaNovaRegular;
+  font-size: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.header-subtitle
+{
+  padding-left: 180px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: RobotoSlabThin;
+  color: #bbb;
+}
+
+img.logo 
+{
+  max-height:200px;
+}
+
+p.logoText
+{
+  word-wrap: break-word;
+  width: 270px;
+  height: 200px;
+  color: white;
+}
+
+hr
+{
+  width: 60%;
+  min-width: 480px;
+}
+
+
+a:link
+{
+	color: #537fc6;
+	text-decoration: none
+}
+
+a:visited
+{
+	color: #537fc6;
+	text-decoration: none
+}
+
+a:hover
+{
+	<!-- color: #c1c1c1; -->
+	color: #617aa3;
+}
+
+.copyright
+{
+  text-align: center;
+  color: white;
+  font-family: RobotoSlabThin;
+}
+
+</style>
+</head>
+
+<body class="body">
+
+<div class="header">
+  <div class="header-title">William O. Malmberg</div>
+  <div class="header-subtitle">Game Programmer</div>
+</div>
+
+<div style="padding-bottom: 20px;"></div>
+
+<div class="category-title">Projects</div>
+
+<hr>
+
+<div style="padding-bottom: 20px;"></div>
+
+<div class="boxed">
+  <div class="boxed-title">Albjarkar</div>
+  <div class="section slideshow-container">
+    <div class="mySlides fade" name="slider0">
+      <img src="Images/Albjarkar0.png" style="width:100%">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade" name="slider0">
+      <img src="Images/Albjarkar1.png" style="width:100%">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade" name="slider0">
+      <img src="Images/Albjarkar2.png" style="width:100%">
+      <div class="text"></div>
+    </div>
+ 
+    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1, 0)">&#10095;</a>	  
+	  
+	<span class="dot" name="dot0" onclick="currentSlide(1, 0)" style="margin-left:-30px;"></span> 
+    <span class="dot" name="dot0" onclick="currentSlide(2, 0)" style="margin-left:-7px;"></span> 
+    <span class="dot" name="dot0" onclick="currentSlide(3, 0)" style="margin-left:16px;"></span>
+  </div>
+
+  <div class="section boxed-text">
+    <p>A third-person puzzle-platformer with a narrative centered around environmental issues.<p>
+	
+	<p>Albjarkar was developed by a group of 20+ students. <br /> I was among the 5 programmers on the project.<p>
+	
+	<p>Responsibilities: Custom finite state machine for enemy AI, AI behaviour, AI pathfinding using Unity’s NavMesh system, and custom traversal between distant navigation meshes for jumping and climbing.</p>
+	
+  </div>
+</div>
+
+<div style="padding-bottom: 20px;"></div>
+
+<div class="boxed">
+  <div class="boxed-title">Tondöv</div>
+  <img src="Images/Tondöv0.png" style="width:512px">
+  <!--<div class="section slideshow-container">
+    <div class="mySlides fade" name="slider1">
+      <img src="Images/Tondöv0.png" style="width:100%">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade" name="slider1">
+      <img src="Images/Albjarkar1.png" style="width:100%">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade" name="slider1">
+      <img src="Images/Albjarkar1.png" style="width:100%">
+      <div class="text"></div>
+    </div>
+ 
+    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>	  
+	  
+	<script> currentSlide(0,1)</script>
+	  
+	<span class="dot"  name="dot1" onclick="currentSlide(1, 1)" style="margin-left:-30px;"></span> 
+    <span class="dot" name="dot1" onclick="currentSlide(2, 1)" style="margin-left:-7px;"></span> 
+    <span class="dot" name="dot1" onclick="currentSlide(3, 1)" style="margin-left:16px;"></span>
+  </div>-->
+
+  <div class="section boxed-text">
+    <p>A humorous punk-themed game that has the player use their voice to interact with the environment and solve puzzles.<p>
+	
+	<p>Tondöv was developed by a group of 20+ students. <br /> I was among the 5 programmers on the project.<p>
+	
+	<p>Responsibilities: Inventory system, player controls, object interaction, camera effects, and assisting other members of the team in understanding the engine.</p>
+	
+	<a href="https://github.com/willmalm/Tonedeaf">Source Code</a>
+
+  </div>
+</div>
+
+<div style="padding-bottom: 40px;"></div>
+
+<div class="category-title">About me</div>
+
+<hr>
+
+<div style="padding-bottom: 20px;"></div>
+
+<div style="text-align: center;">
+<img src="Images/aboutme_small.png" style="border-radius: 5px; display: inline-block; width: 250px; padding-left: 40px; padding-right: 40px;">
+<div style="word-wrap: break-word; width: 620px; color: white; font-family: RobotoSlabThin; display: inline-block; vertical-align : top; padding-left: 40px; padding-right: 40px;">
+<p>My name is William Malmberg and I'm a 22 year old game programmer.</p>
+<p>I'm very passionate about games and I've been using the Unity engine to code for over five years. My interests spans most of game development so I also create other things from time to time, such as art and VFX.</p>
+</div>
+
+<div style="padding-bottom: 60px;"></div>
+
+<div class="copyright">Copyright © 2018 William O. Malmberg</div>
+
+<div style="padding-bottom: 20px;"></div>
+</body>
+</html>
+
+<script>
+var slideIndex = new Array(2);
+slideIndex[0]=1;
+slideIndex[1]=1;
+
+showSlides(1, 0);  
+showSlides(1, 1);
+
+
+function plusSlides(n, slideshownumber) 
+{
+  slideIndex[slideshownumber] = slideIndex[slideshownumber] + n; 
+  showSlides( slideIndex[slideshownumber], slideshownumber );
+}
+
+function currentSlide(n, slideshownumber) 
+{
+  slideIndex[slideshownumber] = n;
+  showSlides(slideIndex[slideshownumber], slideshownumber);
+}
+
+function showSlides(n, slideshownumber) 
+{
+  var i;
+  var slideshowname = "slider" + slideshownumber;
+  var slides = document.getElementsByName(slideshowname);
+  var dotname = "dot" + slideshownumber;
+  var dots = document.getElementsByName(dotname);
+
+  if (n > slides.length) 
+  {
+      slideIndex[slideshownumber] = 1;
+  }
+
+  if (n < 1) 
+  {
+      slideIndex[slideshownumber] = slides.length;
+  }
+
+  for (i = 0; i < slides.length; i++) 
+  {
+      slides[i].style.display = "none";
+  }
+
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[slideIndex[slideshownumber]-1].style.display = "block";
+  dots[slideIndex[slideshownumber]-1].className += " active";
+} 
+
+</script>
